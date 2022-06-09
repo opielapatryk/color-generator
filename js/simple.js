@@ -1,5 +1,6 @@
 let button = document.querySelector("button")
 let main = document.getElementById("main")
+let span = document.querySelector("span")
 let colors = [
     '#191919', '#115511',
     '#551111', '#111155',
@@ -11,6 +12,7 @@ let counter = 0
 button.addEventListener("click", () => {
     counter += 1
     main.style.backgroundColor = colors[counter]
+    span.innerHTML = colors[counter]
     if (counter == 9) {
         counter = 0
     }
